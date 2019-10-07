@@ -22,9 +22,9 @@ public class Main {
         );
 
         Cart cart = new Cart();
-        cart.add(rubik, 1);
-        cart.add(gymnasticsForTheMind, 1);
-        cart.remove(rubik, 1);
+        cart.add(rubik);
+        cart.add(gymnasticsForTheMind);
+        cart.remove(rubik);
 
         System.out.println(cart.getAmount());
         System.out.println(cart.getAmountWithDiscount());

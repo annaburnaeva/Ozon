@@ -1,7 +1,7 @@
 package ru.itpark;
 
 public class Cart {
-    private int goodCount;
+    private int goodCount = 0;
     private int amount;
     private int amountWithDiscount;
 
@@ -17,16 +17,16 @@ public class Cart {
         return amountWithDiscount;
     }
 
-    public void add(Good good, int count) {
-        amount += good.getPrice() * count;
-        amountWithDiscount += good.getPriceWithDiscount() * count;
-        goodCount += count;
+    public void add(Good good) {
+        amount += good.getPrice();
+        amountWithDiscount += good.getPriceWithDiscount();
+        goodCount++;
     }
 
-    public void remove(Good good, int count) {
-        amount -= good.getPrice() * count;
-        amountWithDiscount -= good.getPriceWithDiscount() * count;
-        goodCount -= count;
+    public void remove(Good good) {
+        amount -= good.getPrice();
+        amountWithDiscount -= good.getPriceWithDiscount();
+        goodCount--;
     }
 
 

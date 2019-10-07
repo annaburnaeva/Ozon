@@ -2,7 +2,7 @@ package ru.itpark;
 
 public class Main {
     public static void main(String[] args) {
-        Good Rubik = new Good(22507818,
+        Good rubik = new Good(22507818,
                 "Rubik's Головоломка Кубик Рубика 3х3",
                 "https://www.ozon.ru/context/detail/id/22507818",
                 1399,
@@ -11,7 +11,7 @@ public class Main {
                 true,
                 "OZON"
         );
-        Good GymnasticsForTheMind = new Good(154832894,
+        Good gymnasticsForTheMind = new Good(154832894,
                 "Гимнастика для ума. Система тренировки интеллекта для детей 6-7 лет. Блокнот-тренажер.",
                 "https://www.ozon.ru/context/detail/id/154832894",
                 1990,
@@ -22,9 +22,9 @@ public class Main {
         );
 
         Cart cart = new Cart();
-        cart.add(Rubik, 1);
-        cart.add(GymnasticsForTheMind, 1);
-        cart.remove(Rubik, 1);
+        cart.add(rubik, 1);
+        cart.add(gymnasticsForTheMind, 1);
+        cart.remove(rubik, 1);
 
         System.out.println(cart.getAmount());
         System.out.println(cart.getAmountWithDiscount());
